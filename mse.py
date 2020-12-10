@@ -1,7 +1,17 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-A = plt.imread("lfw/Lindsey_Graham/Lindsey_Graham_0002.jpg")
-B = plt.imread("lfw/Lindsey_Graham/Lindsey_Graham_0001.jpg")
+folder_name = "alexjc_neural-enhance/"
 
-mse = ((A - B)**2).mean(axis=None)
+# images = [
+
+# ]
+# png vs jpg mse needs to be scaled
+
+A =    plt.imread("alexjc_neural-enhance/salisbury-cathedral_ne2x_80.png")
+B = plt.imread("small-test-set_processed/salisbury-cathedral.jpg")
+A = A*256
+
+mse = ((A - B)**2).mean(axis=None)#/(A.shape[0]*A.shape[1])
+
+print (mse)

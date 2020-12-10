@@ -1,0 +1,5 @@
+green-maple-leaf: 187.30109
+home-office: 334.57007
+martin-luther-king: 259.23697
+mount-rushmore: 197.41672
+salisbury-cathedral: 414.75705
