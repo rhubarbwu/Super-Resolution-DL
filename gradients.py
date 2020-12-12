@@ -11,6 +11,8 @@ img0_sobel = (cv2.Sobel(img0, cv2.CV_64F, 1, 0, ksize=5),
 
 
 img1 = cv2.cvtColor(cv2.imread(sys.argv[2],), cv2.COLOR_BGR2GRAY)
+if img1.shape != img0.shape:
+    img1 = cv2.resize(img1, img0.shape)
 img1 = cv2.GaussianBlur(img1, (3, 3), 0)
 img1_sobel = (cv2.Sobel(img1, cv2.CV_64F, 1, 0, ksize=5),
               cv2.Sobel(img1, cv2.CV_64F, 0, 1, ksize=5))

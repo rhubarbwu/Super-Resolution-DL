@@ -15,3 +15,14 @@ We have another script `preprocessing/reduce.py` that reduces the square images 
 ```sh
 python reduce.py small-test-set 40
 ```
+
+### Evaluation
+
+- Pixel-Wise Mean-Squared Error: `mse.py`
+  - Results in `<results-set-directory>/mses.txt`.
+- Pixel-Wise Gradient Mean-Squared Error `gradients.py`
+  - Results in `<results-set-directory>/gradients.txt`.
+- Corner Detection: `corner-detection.py`
+  - Corner Counts
+  - Mean-Square Error of Closest Corner Distances
+  - Results in `<results-set-directory>/corners.txt`.

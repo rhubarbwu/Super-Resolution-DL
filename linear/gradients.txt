@@ -1,0 +1,19 @@
+green-maple-leaf.jpg
+MSE Sobel X 274981.53484375
+MSE Sobel Y 222540.44609375
+
+home-office.jpg
+MSE Sobel X 330255.60140625
+MSE Sobel Y 419535.62078125
+
+linear martin-luther-king.jpg
+MSE Sobel X 574745.18046875
+MSE Sobel Y 433759.38796875
+
+mount-rushmore.jpg
+MSE Sobel X 312488.98890625
+MSE Sobel Y 377193.54328125
+
+salisbury-cathedral.jpg
+MSE Sobel X 438483.09953125
+MSE Sobel Y 437998.10265625

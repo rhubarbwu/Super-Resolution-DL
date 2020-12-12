@@ -33,17 +33,21 @@ def nearest_other_corner(corner_map, x, y):
 
 
 img0 = cv2.imread(sys.argv[1])
-operatedImage = cv2.cvtColor(img0, cv2.COLOR_BGR2GRAY)
-operatedImage = np.float32(operatedImage)
-dest = cv2.cornerHarris(operatedImage, 2, 5, 0.07)
+img1 = cv2.imread(sys.argv[2])
+if img1.shape != img0.shape:
+    img1 = cv2.resize(img1, (img0.shape[0], img0.shape[1]))
+
+
+operatingImage = cv2.cvtColor(img0, cv2.COLOR_BGR2GRAY)
+operatingImage = np.float32(operatingImage)
+dest = cv2.cornerHarris(operatingImage, 2, 5, 0.07)
 dest = cv2.dilate(dest, None)
 corners_0 = dest > 0.01 * dest.max()
 
 
-img1 = cv2.imread(sys.argv[2])
-operatedImage = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
-operatedImage = np.float32(operatedImage)
-dest = cv2.cornerHarris(operatedImage, 2, 5, 0.07)
+operatingImage = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+operatingImage = np.float32(operatingImage)
+dest = cv2.cornerHarris(operatingImage, 2, 5, 0.07)
 dest = cv2.dilate(dest, None)
 corners_1 = dest > 0.01 * dest.max()
 
