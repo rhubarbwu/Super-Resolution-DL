@@ -1,0 +1,28 @@
+alexjc_neural-enhance/green-maple-leaf_ne2x_80.png 
+Corner Count Differences -308
+Nearest Corner Distances (Original to Upscaled) 0.8139105016886145
+Nearest Corner Distances (Upscaled to Original) 0.4766399189343346
+
+
+alexjc_neural-enhance/home-office_ne2x_80.png 
+Corner Count Differences -86
+Nearest Corner Distances (Original to Upscaled) 0.7091487799760999
+Nearest Corner Distances (Upscaled to Original) 0.4643241066828997
+
+
+alexjc_neural-enhance/martin-luther-king_ne2x_80.png 
+Corner Count Differences 46
+Nearest Corner Distances (Original to Upscaled) 0.6036485714804498
+Nearest Corner Distances (Upscaled to Original) 0.6604840652216573
+
+
+alexjc_neural-enhance/mount-rushmore_ne2x_80.png 
+Corner Count Differences -30
+Nearest Corner Distances (Original to Upscaled) 0.7743341702638369
+Nearest Corner Distances (Upscaled to Original) 0.6534314114849461
+
+
+alexjc_neural-enhance/salisbury-cathedral_ne2x_80.png 
+Corner Count Differences -293
+Nearest Corner Distances (Original to Upscaled) 0.5571867161633152
+Nearest Corner Distances (Upscaled to Original) 0.46161659300705593
