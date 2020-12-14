@@ -1,0 +1,25 @@
+green-maple-leaf.jpg 
+Corner Count Differences -216
+Nearest Corner Distances (Original to Upscaled) 0.8502086448850167
+Nearest Corner Distances (Upscaled to Original) 0.5703518802767681
+
+home-office.jpg
+Corner Count Differences -199
+Nearest Corner Distances (Original to Upscaled) 0.5002400317999139
+Nearest Corner Distances (Upscaled to Original) 0.2687752262013803
+
+martin-luther-king.jpg
+Corner Detection Evaluation for opencv_/martin-luther-king.jpg 
+Corner Count Differences 59
+Nearest Corner Distances (Original to Upscaled) 0.6630451146293805
+Nearest Corner Distances (Upscaled to Original) 0.7126787525183712
+
+mount-rushmore.jpg
+Corner Count Differences -201
+Nearest Corner Distances (Original to Upscaled) 0.8093075312013752
+Nearest Corner Distances (Upscaled to Original) 0.5397514443857702
+
+salisbury-cathedral.jpg
+Corner Count Differences -276
+Nearest Corner Distances (Original to Upscaled) 0.5800301365137305
+Nearest Corner Distances (Upscaled to Original) 0.4897964181768242

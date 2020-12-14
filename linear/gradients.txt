@@ -6,7 +6,7 @@ home-office.jpg
 MSE Sobel X 330255.60140625
 MSE Sobel Y 419535.62078125
 
-linear martin-luther-king.jpg
+martin-luther-king.jpg
 MSE Sobel X 574745.18046875
 MSE Sobel Y 433759.38796875
 
