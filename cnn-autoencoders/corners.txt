@@ -1,24 +1,24 @@
 green-maple-leaf.jpg 
-Corner Count Differences -249
-Nearest Corner Distances (Original to Upscaled) 0.8295515136493172
-Nearest Corner Distances (Upscaled to Original) 0.5301471222329398
+Corner Count Differences -177
+Nearest Corner Distances (Original to Upscaled) 0.7956406188394931
+Nearest Corner Distances (Upscaled to Original) 0.5721108491495077
 
-home-office.jpg 
-Corner Count Differences -87
-Nearest Corner Distances (Original to Upscaled) 0.47766653638060086
-Nearest Corner Distances (Upscaled to Original) 0.3910903526107717
+home-office.jpg     
+Corner Count Differences -2
+Nearest Corner Distances (Original to Upscaled) 0.4936865828705254
+Nearest Corner Distances (Upscaled to Original) 0.5944184681270225
 
 martin-luther-king.jpg
-Corner Count Differences -58
-Nearest Corner Distances (Original to Upscaled) 0.6827063997959587
-Nearest Corner Distances (Upscaled to Original) 0.6128266327774674
+Corner Count Differences -27
+Nearest Corner Distances (Original to Upscaled) 0.7624006350154773
+Nearest Corner Distances (Upscaled to Original) 0.6556132407078217
 
-mount-rushmore.jpg 
-Corner Count Differences -197
-Nearest Corner Distances (Original to Upscaled) 0.8572525103489371
-Nearest Corner Distances (Upscaled to Original) 0.5697181883193675
+mount-rushmore.jpg    
+Corner Count Differences -253
+Nearest Corner Distances (Original to Upscaled) 0.8777960469254923
+Nearest Corner Distances (Upscaled to Original) 0.49541069447105196
 
 salisbury-cathedral.jpg 
-Corner Count Differences -404
-Nearest Corner Distances (Original to Upscaled) 0.596186119900571
-Nearest Corner Distances (Upscaled to Original) 0.4602790298545557
+Corner Count Differences -420
+Nearest Corner Distances (Original to Upscaled) 0.5898751751495148
+Nearest Corner Distances (Upscaled to Original) 0.4594083288751916

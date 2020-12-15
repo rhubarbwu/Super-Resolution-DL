@@ -1,19 +1,19 @@
 green-maple-leaf.jpg
-MSE Sobel X 31977.30765625
-MSE Sobel Y 21479.28578125
+MSE Sobel X 31374.33265625
+MSE Sobel Y 20960.94703125
 
-home-office.jpg
-MSE Sobel X 38602.085625
-MSE Sobel Y 44927.215625
+home-office.jpg     
+MSE Sobel X 31147.60578125
+MSE Sobel Y 37969.06640625
 
 martin-luther-king.jpg
-MSE Sobel X 34785.9925
-MSE Sobel Y 27500.8525
+MSE Sobel X 34841.01125
+MSE Sobel Y 25461.7625
 
-mount-rushmore.jpg
-MSE Sobel X 28911.1025
-MSE Sobel Y 33297.90375
+mount-rushmore.jpg    
+MSE Sobel X 30383.45125
+MSE Sobel Y 38006.534375
 
 salisbury-cathedral.jpg
-MSE Sobel X 56249.65546875
-MSE Sobel Y 56409.93671875
+MSE Sobel X 52131.654375
+MSE Sobel Y 55888.119375
