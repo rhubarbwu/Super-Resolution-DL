@@ -43,4 +43,5 @@ print("MSE Sobel X", np.average(sq_err_sobel_x))
 print("MSE Sobel Y", np.average(sq_err_sobel_y))
 
 
-# plt.show()
+plt.show()
+
