@@ -1,19 +1,19 @@
-alexjc_neural-enhance/green-maple-leaf_ne2x_80.png             
+green-maple-leaf.jpg
 MSE Sobel X 47673.6440625
 MSE Sobel Y 35089.2978125
 
-alexjc_neural-enhance/home-office_ne2x_80.png
+home-office.jpg
 MSE Sobel X 74994.21859375
 MSE Sobel Y 74681.71421875
 
-alexjc_neural-enhance/martin-luther-king_ne2x_80.png
+martin-luther-king.jpg
 MSE Sobel X 87960.819375
 MSE Sobel Y 61992.60625
 
-alexjc_neural-enhance/mount-rushmore_ne2x_80.png
+mount-rushmore.jpg
 MSE Sobel X 43156.0246875
 MSE Sobel Y 59943.9490625
 
-alexjc_neural-enhance/salisbury-cathedral_ne2x_80.png
+salisbury-cathedral.jpg
 MSE Sobel X 89385.66109375
 MSE Sobel Y 91589.49296875
