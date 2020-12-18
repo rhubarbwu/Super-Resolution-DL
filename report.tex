@@ -144,7 +144,7 @@ Our linear interpolation method was implemented in \texttt{linear\_inter.ipynb} 
     \caption{Super-resolution using Neural-Enhance.}
 \end{figure*}
 
-Using the existing implementation of Neural Enhance\cite{AlexJC}, deployed to a dockerized container on Google Compute Platform we generated the SR images in [Figure 6]. Neural Enhance provides pre-trained models of a purely CNN nature. Neural Enhance contains 16 Convolution layers and 4 max-pooling layers.
+Using the existing implementation of Neural Enhance\cite{AlexJC}, deployed to a dockerized container on Google Compute Platform (GCP) we generated the SR images in [Figure 6]. Neural Enhance provides pre-trained models of a purely CNN nature. Neural Enhance contains 16 Convolution layers and 4 max-pooling layers.
 
 \pagebreak
 
@@ -157,7 +157,7 @@ Using the existing implementation of Neural Enhance\cite{AlexJC}, deployed to a 
     \caption{Super-resolution using CNNs and Autoencoders.}
 \end{figure*}
 
-And finally, in using CNNs and Autoencoders, we followed a \href{https://towardsdatascience.com/image-super-resolution-using-convolution-neural-networks-and-auto-encoders-28c9eceadf90}{Towards Data Science tutorial} \cite{PatelH} and trained the model on the ``Labeled Faces in the Wild" dataset \cite{LFWTech} \cite{LFWTechUpdate} using a $5$\% partition and maximum of $100$ epochs. For this method, we adjusted the hyperparameters, and cleaned the validation set with minor data processing and adding our test images. Furthermore, we added a normalizing function \texttt{normalize()} as the produced images had scaling that slightly exceeded the upper bounds of pixel values. Using $50$\% pixalating (roughly equivalent to our downsampling preprocessing reduction), the cost function reached converged at the plateau in $51$ epochs, when our final results were produced [Figure 7].
+And finally, in using CNNs and Autoencoders, we followed a \href{https://towardsdatascience.com/image-super-resolution-using-convolution-neural-networks-and-auto-encoders-28c9eceadf90}{Towards Data Science tutorial} \cite{PatelH} and trained the model on the ``Labeled Faces in the Wild" dataset \cite{LFWTech} \cite{LFWTechUpdate} using a $5$\% partition and maximum of $100$ epochs. For this method, we adjusted the hyperparameters, and cleaned the validation set with minor data processing and adding our test images. Furthermore, we added a normalizing function \texttt{normalize()} as the produced images had scaling that slightly exceeded the upper bounds of pixel values. Using $50$\% pixelation (roughly equivalent to the factor of $2$ in our downsampling preprocessing reduction), the cost function reached converged at the plateau in $51$ epochs, when our final results were produced [Figure 7]. Looking at these images qualitatively, we have high hopes for this method.
 
 \subsection*{Evaluation}
 
@@ -173,11 +173,13 @@ In measuring the quality of the super-resolution (SR) outputs numerically, we us
 \pagebreak
 \subsubsection*{Results}
 
+Using the SR images generated from our methods [Figures 4, 5, 6, 7], we used our evaluation methods to produce the following results.
+
 \begin{center}\begin{tabular}{ |c||c|c|c|c| }
     \hline
     \multicolumn{5}{|c|}{Green Maple Leaf Results} \\
     \hline
-    & MSE & MSGE\* & Corner Count & Nearest-Corner\\
+    & MSE & MSGE\* & Corner Count* & Nearest-Corner\\
     \hline
     Linear Interpolation & $61.52$ & $(274982, 222540)$ & $-524$ & $(1.375, 0.412)$\\
     EDSRN & $55.04$ & $(31710, 26342)$ & $-216$ & $(0.850, 0.570)$\\
@@ -190,7 +192,7 @@ In measuring the quality of the super-resolution (SR) outputs numerically, we us
     \hline
     \multicolumn{5}{|c|}{Home Office Results} \\
     \hline
-    & MSE & MSGE\* & Corner Count & Nearest-Corner\\
+    & MSE & MSGE\* & Corner Count* & Nearest-Corner\\
     \hline
     Linear Interpolation & $72.01$ & $(330256, 419536)$ & $87$ & $(0.453, 0.614)$\\
     EDSRN & $62.65$ & $(39649, 51109)$ & $-199$ & $(0.500, 0.268)$\\
@@ -203,7 +205,7 @@ In measuring the quality of the super-resolution (SR) outputs numerically, we us
     \hline
     \multicolumn{5}{|c|}{Martin Luther King Jr. Results} \\
     \hline
-    & MSE & MSGE\* & Corner Count & Nearest-Corner\\
+    & MSE & MSGE & Corner Count* & Nearest-Corner\\
     \hline
     Linear Interpolation & $52.20$ & $(574745, 433759)$ & $7$ & $(0.816, 0.700)$\\
     EDSRN & $42.21$ & $(53709, 36984)$ & $59$ & $(0.663, 0.713)$\\
@@ -216,7 +218,7 @@ In measuring the quality of the super-resolution (SR) outputs numerically, we us
     \hline
     \multicolumn{5}{|c|}{Mount Rushmore Results} \\
     \hline
-    & MSE & MSGE\* & Corner Count & Nearest-Corner\\
+    & MSE & MSGE & Corner Count* & Nearest-Corner\\
     \hline
     Linear Interpolation & $59.88$ & $(312489, 377194)$ & $179$ & $(0.674, 0.822)$\\
     EDSRN & $53.06$ & $(38247, 45897)$ & $-201$ & $(0.809, 0.540)$\\
@@ -229,7 +231,7 @@ In measuring the quality of the super-resolution (SR) outputs numerically, we us
     \hline
     \multicolumn{5}{|c|}{Salisbury Cathedral Results} \\
     \hline
-    & MSE & MSGE\* & Corner Count & Nearest-Corner\\
+    & MSE & MSGE & Corner Count* & Nearest-Corner\\
     \hline
     Linear Interpolation & $86.20$ & $(438483, 437998)$ & $-543$ & $(0.617, 0.444)$\\
     EDSRN & $79.80$ & $(67422, 65934)$ & $-276$ & $(0.580, 0.490)$\\
@@ -237,7 +239,7 @@ In measuring the quality of the super-resolution (SR) outputs numerically, we us
     CNNs+Autoencoders & $80.17$ & $(52132, 55888)$ & $-420$ & $(0.590, 0.459)$\\
     \hline
 \end{tabular}\end{center}
-
+\textit{* Note that Corner Counts are expressed as signed differences, and the quality of the SR solution via preservation of corners should be interpreted using the magnitude of the differences.}
 
 \pagebreak
 \section*{Conclusion}
@@ -251,7 +253,7 @@ After reviewing the results, we made the following observations.
     \item Meanwhile, CNNs and Autoencoders performed well in this respect, with the lowest squared gradient (in both componenets) errors among all methods across all images.
     \item For the Green Maple Leaf and Salisbury Cathedral images, corner counts differed a lot for all methods, with three-figure corner count differences. Additionally, it would appear that every method lost hundreds of these perceived corners since their corner count differences are all negative for these two images.
     \item For the Martin Luther King Jr. image, corner counts from Corner Detection were the smallest in magnitude. This seems to agree with the visual inspection interpretation that the other images have many more corners and details, while this image of King had longer edges and more smooth color profiles.
-    \item CNNs and Autoencoders had mixed results in corner detection. This is not what we expected, as we imagined that implementing deep learning to recognize natural and human-centred patterns would yield better results than the classical methods we tested.
+    \item CNNs and Autoencoders had mixed results in corner detection. This is not what we expected, as we imagined that implementing deep learning to recognize natural and human-centred patterns would yield much better results than the classical methods we tested.
     \item Qualitatively, we comment on the quality of these SR images.
         \begin{itemize}
             \item Linear interpolation produced images that look very similar to the reduced images, so this method is not very valuable.
